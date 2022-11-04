@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 export default function BlogList(props) {
   const blogs = props.blogs;
@@ -9,9 +10,11 @@ export default function BlogList(props) {
       <h2>{title}</h2>
       {blogs.map((blog) => (
         <div className="blog-preview" key={blog.id}>
-          <h2>{blog.title}</h2>
-          <p>{blog.body}</p>
-          <i>Written by {blog.author}</i>
+          <Link to={`/blog/${blog.id}`}>
+            <h2>{blog.title}</h2>
+            <p>{blog.body}</p>
+            <i>Written by {blog.author}</i>
+          </Link>
         </div>
       ))}
     </div>

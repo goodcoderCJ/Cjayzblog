@@ -1,16 +1,34 @@
 {
-  "blogs":[
-  {
-    "title":"My First Blog",
-    "body":"Why do we it?\nIt is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. the point of using lorem ipsum is that is that it has a more or less normal distribution of letters, as opposed  to using 'Content here...,content here'without it",
-    "author":"cjay",
-    "id":1
-  },
-  {
-    "title":"Opening Party",
-    "body":"Why do we it?\nIt is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. the point of using lorem ipsum is that is that it has a more or less normal distribution of letters, as opposed  to using 'Content here...,content here'without it",
-     "author":"wale",
-    "id":2
-  }
-]
+  "blogs": [
+    {
+      "title": "My First Blog",
+      "body": "Why do we use it?\nIt is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. the point of using lorem ipsum is that is that it has a more or less normal distribution of letters, as opposed  to using 'Content here...,content here'without it",
+      "author": "cjay",
+      "id": 1
+    },
+    {
+      "title": "Opening Party",
+      "body": "Why do we use it?\nIt is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. the point of using lorem ipsum is that is that it has a more or less normal distribution of letters, as opposed  to using 'Content here...,content here'without it",
+      "author": "wale",
+      "id": 2
+    },
+    {
+      "title": "hi",
+      "body": "cee",
+      "author": "cjay",
+      "id": 4
+    },
+    {
+      "title": "hi",
+      "body": "cee",
+      "author": "cjay",
+      "id": 5
+    },
+    {
+      "title": "Say hello",
+      "body": "Greetings",
+      "author": "wale",
+      "id": 6
+    }
+  ]
 }

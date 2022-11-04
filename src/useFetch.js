@@ -6,8 +6,9 @@ function useFetch(url) {
   const [error, setError] = React.useState(null);
 
   React.useEffect(() => {
+    const abortControl = new AbortController();
     setTimeout(() => {
-      fetch(url)
+      fetch(url, { signal: abortControl.signal })
         .then((res) => {
           if (!res.ok) {
             //setBlogs(null);
@@ -21,10 +22,17 @@ function useFetch(url) {
           setError(null);
         })
         .catch((err) => {
-          setError(err.message);
-          setLoading(false);
+          if (err.name === "AbortError") {
+            console.log("fetch aborted");
+          } else {
+            setError(err.message);
+            setLoading(false);
+          }
         });
     }, 500);
+    return () => {
+      abortControl.abort();
+    };
   }, [url]);
   return { data, isLoading, error };
 }
